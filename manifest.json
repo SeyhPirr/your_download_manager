@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Your Download Manager",
+  "version": "1.0.0",
+  "description": "A simple download manager extension",
+  "author": "Eyuphan Seymen",
+  "permissions": ["downloads", "storage", "tabs"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Your Download Manager"
+  },
+  "background": {
+    "service_worker": "script.js",
+    "type": "module"
+  },
+  "host_permissions": ["https://www.google.com/*"]
+}
